@@ -379,10 +379,319 @@ body {
    }
 }
 
-@media(min-width: 375px) and (max-width: 376px){
+@media screen and (max-width: 374px), 
+       screen and (max-height: 813px) {
+
+        .nav{
+          margin-top: -200px;
+        }
+
+        body{
+          overflow-x: hidden;
+        }
+      
+        .logo{
+        }
+      
+        .pageTwo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .pageTwo h1{
+          font-size: 26px;
+        }
+      
+        .pageTwo p{
+          width: 350px;
+          font-size: 24px;
+        }
+        .images{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .athletes{
+          width: 250px;
+          height: 250px;
+        }
+        .coaches{
+          width: 250px;
+          height: 250px;
+        }
+        .team{
+          width: 250px;
+          height: 250px;
+        }
+        .video{
+          width: 250px;
+          height: 250px;
+        }
+      
+        .join p{
+          font-size: 24px;
+        }
+      
+        .connect-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .share-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .promote-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .informed-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .connect{
+          width: 250px;
+          height: 250px;
+        }
+      
+        .connect-text h1{
+          font-size: 26px;
+        }
+      
+        .connect-text p{
+          font-size: 24px;
+        }
+        .share{
+          width: 250px;
+          height: 250px;
+          margin-top: 50px;
+        }
+      
+        .share-text h1{
+          font-size: 26px;
+        }
+      
+        .share-text p{
+          font-size: 24px;
+        }
+        .promote{
+          width: 250px;
+          height: 250px;
+        }
+      
+        .promote-container{
+          width: 250px;
+          margin-top: 20px;
+        }
+      
+        .information{
+          width: 250px;
+          height: 250px;
+          margin-top: 100px;
+        }
+      
+        .content{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .content h1{
+          color: #fff;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800 ;
+          line-height: normal;
+          font-weight: 800;
+          line-height: normal;
+          font-family: AirbnbCereal;
+          color: #fff;
+          width: 300px;
+        }
+      
+        .content p{
+          width: 300px;
+          color: #fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 3;
+        font-style: normal;
+        font-family: AirbnbCereal2;
+        font-weight: 500;
+        }
+}
+
+@media screen and (max-width: 375px), 
+       screen and (max-height: 668px) {
+
+        .nav{
+          margin-top: -50px;
+        }
+        body{
+          overflow-x: hidden;
+        }
+      
+        .logo{
+        }
+      
+        .pageTwo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .pageTwo h1{
+          font-size: 26px;
+        }
+      
+        .pageTwo p{
+          width: 350px;
+          font-size: 24px;
+        }
+        .images{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .athletes{
+          width: 250px;
+          height: 250px;
+        }
+        .coaches{
+          width: 250px;
+          height: 250px;
+        }
+        .team{
+          width: 250px;
+          height: 250px;
+        }
+        .video{
+          width: 250px;
+          height: 250px;
+        }
+      
+        .join p{
+          font-size: 24px;
+        }
+      
+        .connect-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .share-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+        .promote-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .informed-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .connect{
+          width: 250px;
+          height: 250px;
+        }
+      
+        .connect-text h1{
+          font-size: 26px;
+        }
+      
+        .connect-text p{
+          font-size: 24px;
+        }
+        .share{
+          width: 250px;
+          height: 250px;
+          margin-top: 50px;
+        }
+      
+        .share-text h1{
+          font-size: 26px;
+        }
+      
+        .share-text p{
+          font-size: 24px;
+        }
+        .promote{
+          width: 250px;
+          height: 250px;
+        }
+      
+        .promote-container{
+          width: 250px;
+          margin-top: 20px;
+        }
+      
+        .information{
+          width: 250px;
+          height: 250px;
+          margin-top: 100px;
+        }
+      
+        .content{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      
+        .content h1{
+          color: #fff;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 800 ;
+          line-height: normal;
+          font-weight: 800;
+          line-height: normal;
+          font-family: AirbnbCereal;
+          color: #fff;
+          width: 300px;
+        }
+      
+        .content p{
+          width: 300px;
+          color: #fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 3;
+        font-style: normal;
+        font-family: AirbnbCereal2;
+        font-weight: 500;
+        }
+}
+
+@media(min-width: 374px) and (max-width: 375px){
   .nav{
-    margin-top: -135px;
-    height: 130px;
+    margin-top: -40px;
+    max-height: 80px
   }
 
   body{
@@ -390,11 +699,6 @@ body {
   }
 
   .logo{
-   margin-top: 30px;
-  }
-
-  .toggle{
-    margin-top: 50px;
   }
 
   .pageTwo{
