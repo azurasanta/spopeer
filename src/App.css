@@ -20,8 +20,11 @@
   src: url('https://fonts.googleapis.com/css?family=Mulish');
 }
 
-body{
+html, body {
   overflow-x: hidden;
+}
+body {
+  position: relative
 }
 
 .App{
