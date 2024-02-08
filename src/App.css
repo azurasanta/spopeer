@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url("https://db.onlinewebfonts.com/c/5cae74f63bd48d24d5abdddb3af09a50?family=Airbnb+Cereal+App+Black");
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
@@ -17,6 +18,10 @@
 @font-face {
   font-family: Mulish;
   src: url('https://fonts.googleapis.com/css?family=Mulish');
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .App{
@@ -38,7 +43,7 @@
   background-color: white;
   width: 500px;
   height: 80px;
-  margin-top: -420px;
+  margin-top: 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -63,278 +68,1207 @@
 }
 
 .pageTwo{
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+.pageTwo h1{
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageTwo p{
+  width: 884px;
+  font-size: 25px;
+  line-height: 34.1px;
+  font-weight: 400px;
+  text-align: center;
+}
+
+.join{
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.pageTwo h1{
-  font-size: 45px;
+.join button{
+  width: 224px;
+  margin-top: 10px;
+  color: #1637FF;
+  height: 59px;
+  border-radius: 8px;
+  padding: 16px, 22px, 16px, 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
+.connect-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 50px;
+}
 
-@media(max-width: 360px){
+.share-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.share-text p{
+  width: 638px;
+  text-indent: 20px;
+  word-wrap: break-word;
+  height: 132px;
+  text-align: center;
+}
+
+.share-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 51px;
+}
+
+.promote-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.informed-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.informed-text{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.informed-text p{
+  width: 638px;
+  height: 132px;
+}
+
+.footer{
+  background-color: #1637FF;
+  width: 200%;
+  overflow-x: hidden;
+  height: 94px
+}
+
+.top-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.top-footer p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.logo2{
+  height: 13px;
+  width: 13px;
+}
+
+@media(min-width: 360px) and (max-width: 365px){
   .nav{
-    margin-top: -400px;
+    margin-top: -35px;
+  }
+
+  .content h1{
+    color: #fff;
+    font-size: 24px;
+    width: 350px;
+  }
+
+  .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pageTwo h1{
+    font-size: 26px;
+  }
+
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content h1{
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800 ;
+    line-height: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: AirbnbCereal;
+    color: #fff;
+    width: 300px;
+  }
+
+  .content p{
+    width: 350px;
+    color: #fff;
+  text-align: center;
+  font-size: 22.5px;
+  line-height: 3;
+  font-style: normal;
+  font-family: AirbnbCereal2;
+  font-weight: 500;
+  }
+
+  .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   
+   .content2 h2{
+     color: white;
+   }
+   
+   .content2 button{
+     border-radius: 30px;
+     background-color: #FFF;
+     width: 234px;
+     height: 50px;
+     color: #00F;
+     text-align: center;
+     font-size: 24px;
+     font-weight: 600;
+     line-height: normal;
+   }
+}
+
+@media(min-width: 375px) and (max-width: 380px){
+  .nav{
+    margin-top: -200px;
+  }
+
+  .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pageTwo h1{
+    font-size: 26px;
+  }
+
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content h1{
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800 ;
+    line-height: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: AirbnbCereal;
+    color: #fff;
+    width: 300px;
+  }
+
+  .content p{
+    width: 300px;
+    color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 3;
+  font-style: normal;
+  font-family: AirbnbCereal2;
+  font-weight: 500;
   }
 }
 
-@media(max-width: 350px){
+@media(min-width: 384px) and (max-width: 390px){
   .nav{
     margin-top: -430px;
   }
+  .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
   .content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
   }
 
   .content h1{
-    color: #fff;
-    font-style: normal;
-    font-weight: 800 ;
-    line-height: normal;
-    font-weight: 800;
-    line-height: normal;
-    font-family: AirbnbCereal;
-    color: #fff
+
   }
 
-  .content p{
-    width: 500px;
-    color: #fff;
-  text-align: center;
-  font-size: 22.5px;
-  line-height: 3;
-  font-style: normal;
-  font-family: AirbnbCereal2;
-  font-weight: 500;
+  .pageTwo h1{
+    font-size: 26px;
   }
 
-  .content2{
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
+  }
+  .images{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   }
-   
-   .content2 h2{
-     color: white;
-   }
-   
-   .content2 button{
-     border-radius: 30px;
-     background-color: #FFF;
-     width: 234px;
-     height: 50px;
-     color: #00F;
-     text-align: center;
-     font-size: 24px;
-     font-weight: 600;
-     line-height: normal;
-   }
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
 }
 
-@media (min-width: 370px) and (max-width: 375px){
+@media(min-width: 390px) and (max-width: 394px){
   .nav{
-    margin-top: -410px;
+    margin-top: -430px;
+  }
+  .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pageTwo h1{
+    font-size: 26px;
+  }
+
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
   }
 }
 
-@media(min-width: 377px) and (max-width: 379px){
+@media(min-width: 410px) and (max-width: 412px){
   .nav{
-    margin-top: -410px;
+    margin-top: -460px;
   }
-  .content{
+  .pageTwo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
   }
 
-  .content h1{
-    color: #fff;
-    font-style: normal;
-    font-weight: 800 ;
-    line-height: normal;
-    font-weight: 800;
-    line-height: normal;
-    font-family: AirbnbCereal;
-    color: #fff
+  .pageTwo h1{
+    font-size: 26px;
   }
 
-  .content p{
-    width: 500px;
-    color: #fff;
-  text-align: center;
-  font-size: 22.5px;
-  line-height: 3;
-  font-style: normal;
-  font-family: AirbnbCereal2;
-  font-weight: 500;
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
   }
-
-  .content2{
+  .images{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   }
-   
-   .content2 h2{
-     color: white;
-   }
-   
-   .content2 button{
-     border-radius: 30px;
-     background-color: #FFF;
-     width: 234px;
-     height: 50px;
-     color: #00F;
-     text-align: center;
-     font-size: 24px;
-     font-weight: 600;
-     line-height: normal;
-   }
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
 }
 
-@media(min-width: 380px) and (max-width: 392px){
+@media(min-width: 413px) and (max-width: 415px){
   .nav{
-   margin-top: -50px;
+    margin-top: -450px;
   }
-
-  .content{
-    margin-top: 40px;
+  .pageTwo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .content{
+
+  .pageTwo h1{
+    font-size: 26px;
+  }
+
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
+  }
+  .images{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
   }
 
-  .content h1{
-    color: #fff;
-    font-style: normal;
-    font-weight: 800 ;
-    line-height: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: normal;
-    font-family: AirbnbCereal;
-    color: #fff
+  .join p{
+    font-size: 24px;
   }
 
-  .content p{
-    width: 300px;
-    color: #fff;
-  text-align: center;
-  font-size: 20px;
-  line-height: 3;
-  font-style: normal;
-  font-family: AirbnbCereal2;
-  font-weight: 500;
-  }
-
-  .content2{
+  .connect-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   }
-   
-   .content2 h2{
-     color: white;
-   }
-   
-   .content2 button{
-     border-radius: 30px;
-     background-color: #FFF;
-     width: 234px;
-     height: 50px;
-     color: #00F;
-     text-align: center;
-     font-size: 24px;
-     font-weight: 600;
-     line-height: normal;
-   }
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
 }
 
-@media(min-width: 400px) and (max-width: 428px){
-  .nav{
-   margin-top: -10px;
-  }
-  .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
-  }
-
-  .content h1{
-    color: #fff;
-    font-style: normal;
-    font-weight: 800 ;
-    line-height: normal;
-    font-weight: 800;
-    line-height: normal;
-    font-family: AirbnbCereal;
-    color: #fff
-  }
-
-  .content p{
-    width: 300px;
-    color: #fff;
-  text-align: center;
-  font-size: 22.5px;
-  line-height: 3;
-  font-style: normal;
-  font-family: AirbnbCereal2;
-  font-weight: 500;
-  }
-
-  .content2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   }
-   
-   .content2 h2{
-     color: white;
-   }
-   
-   .content2 button{
-     border-radius: 30px;
-     background-color: #FFF;
-     width: 234px;
-     height: 50px;
-     color: #00F;
-     text-align: center;
-     font-size: 24px;
-     font-weight: 600;
-     line-height: normal;
-   }
-}
-
-@media(min-width: 468px) and (max-width: 500px){
+@media(min-width: 428px) and (max-width: 428px){
   .nav{
     margin-top: -470px;
     border-radius: 0px;
   }
+  .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .pageTwo h1{
+    font-size: 26px;
+  }
+
+  .pageTwo p{
+    width: 350px;
+    font-size: 24px;
+  }
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .athletes{
+    width: 250px;
+    height: 250px;
+  }
+  .coaches{
+    width: 250px;
+    height: 250px;
+  }
+  .team{
+    width: 250px;
+    height: 250px;
+  }
+  .video{
+    width: 250px;
+    height: 250px;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .connect{
+    width: 250px;
+    height: 250px;
+  }
+
+  .connect-text h1{
+    font-size: 26px;
+  }
+
+  .connect-text p{
+    font-size: 24px;
+  }
+  .share{
+    width: 250px;
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  .share-text h1{
+    font-size: 26px;
+  }
+
+  .share-text p{
+    font-size: 24px;
+  }
+  .promote{
+    width: 250px;
+    height: 250px;
+  }
+
+  .promote-container{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .information{
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+  }
+}
+
+
+@media(min-width: 429px) and (max-width: 500px){
+  .nav{
+    margin-top: -30px;
+    border-radius: 0px;
+  }
+
+  .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content h1{
+    color: #fff;
+    font-style: normal;
+    font-weight: 800 ;
+    line-height: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-family: AirbnbCereal;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .content p{
+    width: 300px;
+    color: #fff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 3;
+  font-style: normal;
+  font-family: AirbnbCereal2;
+  font-weight: 500;
+  }
+
+  .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   
+   .content2 h2{
+     color: white;
+   }
+
+   .content h1{
+    width: 400px;
+   }
+   
+   .content2 button{
+     border-radius: 30px;
+     background-color: #FFF;
+     width: 234px;
+     height: 50px;
+     color: #00F;
+     text-align: center;
+     font-size: 24px;
+     font-weight: 600;
+     line-height: normal;
+   }
+
+   .pageTwo h1{
+    font-size: 20px;
+    width: 400px;
+   }
+
+   .pageTwo p{
+    width: 400px;
+    font-size: 24px;
+   }
+
+   .athletes{
+    width: 250px;
+    height: 250px
+   }
+
+   .connect-text p{
+    font-size: 20px;
+   }
+
+   .share-text p{
+    font-size: 20px;
+   }
+
+   .promote-text p{
+    font-size: 20px;
+   }
+
+   .informed-text p{
+    font-size: 20px;
+   }
+
+   .coaches{
+    width: 250px;
+    height: 250px;
+   }
+
+   .team{
+    width: 250px;
+    height: 250px;
+   }
+
+   .video{
+    width: 250px;
+    height: 250px;
+   }
+
+   .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote{
+    width: 300px;
+    height: 300px
+   }
+
+   .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .information{
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+   }
+
+   .join p{
+    font-size: 20px;
+   }
+
+   .pageTwo p{
+    font-size: 20px;
+   }
+
+   .connect{
+    height: 300px;
+    width: 300px
+   }
+
+   .share{
+    width: 300px;
+    height: 300px
+   }
+
+   .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
 }
 
 @media(min-width: 501px) and (max-width: 600px){
@@ -353,13 +1287,15 @@
 
   .content h1{
     color: #fff;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800 ;
     line-height: normal;
     font-weight: 800;
     line-height: normal;
     font-family: AirbnbCereal;
-    color: #fff
+    color: #fff;
+    width: 400px;
   }
 
   .content p{
@@ -395,11 +1331,107 @@
      font-weight: 600;
      line-height: normal;
    }
+
+   .athletes{
+    width: 250px;
+    height: 250px;
+   }
+
+   .coaches{
+    width: 250px;
+    height: 250px;
+   }
+
+   .team{
+    width: 250px;
+    height: 250px;
+   }
+
+   .video{
+    width: 250px;
+    height: 250px;
+   }
+
+   .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .pageTwo p{
+    width: 400px;
+    font-size: 20px;
+   }
+
+   .pageTwo h1{
+    font-size: 24px;
+   }
+
+   .join p{
+    font-size: 20px;
+   }
+
+   .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .connect{
+    width: 300px;
+    height: 300px;
+   }
+
+   .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .share{
+    width: 300px;
+    height: 300px
+   }
+
+   .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote{
+    width: 300px;
+    height: 300px
+   }
+
+   .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .information{
+    width: 300px;
+    height: 300px;
+   }
+
 }
 
 @media(min-width: 601px) and (max-width: 700px){
   .nav{
-   margin-top: -10px;
+   margin-top: -40px;
    border-radius: 0px;
    width: 700px
   }
@@ -417,6 +1449,7 @@
     font-weight: 800 ;
     line-height: normal;
     font-weight: 800;
+    font-size: 26px;
     line-height: normal;
     font-family: AirbnbCereal;
     color: #fff
@@ -454,6 +1487,101 @@
      font-size: 24px;
      font-weight: 600;
      line-height: normal;
+   }
+
+   .athletes{
+    width: 250px;
+    height: 250px;
+   }
+
+   .coaches{
+    width: 250px;
+    height: 250px;
+   }
+
+   .team{
+    width: 250px;
+    height: 250px;
+   }
+
+   .video{
+    width: 250px;
+    height: 250px;
+   }
+
+   .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .pageTwo p{
+    width: 400px;
+    font-size: 20px;
+   }
+
+   .pageTwo h1{
+    font-size: 24px;
+   }
+
+   .join p{
+    font-size: 20px;
+   }
+
+   .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .connect{
+    width: 300px;
+    height: 300px;
+   }
+
+   .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .share{
+    width: 300px;
+    height: 300px
+   }
+
+   .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote{
+    width: 300px;
+    height: 300px
+   }
+
+   .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .information{
+    width: 300px;
+    height: 300px;
    }
 }
 
@@ -517,6 +1645,101 @@ font-weight: 500;
    line-height: normal;
  }
 
+ .athletes{
+  width: 250px;
+  height: 250px;
+ }
+
+ .coaches{
+  width: 250px;
+  height: 250px;
+ }
+
+ .team{
+  width: 250px;
+  height: 250px;
+ }
+
+ .video{
+  width: 250px;
+  height: 250px;
+ }
+
+ .pageTwo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .pageTwo p{
+  width: 400px;
+  font-size: 20px;
+ }
+
+ .pageTwo h1{
+  font-size: 24px;
+ }
+
+ .join p{
+  font-size: 20px;
+ }
+
+ .connect-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .connect{
+  width: 300px;
+  height: 300px;
+ }
+
+ .share-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .share{
+  width: 300px;
+  height: 300px
+ }
+
+ .promote-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .promote{
+  width: 300px;
+  height: 300px
+ }
+
+ .informed-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .information{
+  width: 300px;
+  height: 300px;
+ }
+
 }
 
 @media(min-width: 800px) and (max-width: 900px){
@@ -576,6 +1799,101 @@ font-weight: 500;
      font-size: 24px;
      font-weight: 600;
      line-height: normal;
+   }
+
+   .athletes{
+    width: 250px;
+    height: 250px;
+   }
+
+   .coaches{
+    width: 250px;
+    height: 250px;
+   }
+
+   .team{
+    width: 250px;
+    height: 250px;
+   }
+
+   .video{
+    width: 250px;
+    height: 250px;
+   }
+
+   .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .pageTwo p{
+    width: 400px;
+    font-size: 20px;
+   }
+
+   .pageTwo h1{
+    font-size: 24px;
+   }
+
+   .join p{
+    font-size: 20px;
+   }
+
+   .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .connect{
+    width: 300px;
+    height: 300px;
+   }
+
+   .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .share{
+    width: 300px;
+    height: 300px
+   }
+
+   .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote{
+    width: 300px;
+    height: 300px
+   }
+
+   .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .information{
+    width: 300px;
+    height: 300px;
    }
 }
 
@@ -638,6 +1956,101 @@ font-weight: 500;
      font-weight: 600;
      line-height: normal;
    }
+
+   .athletes{
+    width: 250px;
+    height: 250px;
+   }
+
+   .coaches{
+    width: 250px;
+    height: 250px;
+   }
+
+   .team{
+    width: 250px;
+    height: 250px;
+   }
+
+   .video{
+    width: 250px;
+    height: 250px;
+   }
+
+   .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .pageTwo p{
+    width: 400px;
+    font-size: 20px;
+   }
+
+   .pageTwo h1{
+    font-size: 24px;
+   }
+
+   .join p{
+    font-size: 20px;
+   }
+
+   .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .connect{
+    width: 300px;
+    height: 300px;
+   }
+
+   .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .share{
+    width: 300px;
+    height: 300px
+   }
+
+   .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote{
+    width: 500px;
+    height: 500px
+   }
+
+   .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .information{
+    width: 300px;
+    height: 300px;
+   }
    
   
 }
@@ -698,6 +2111,101 @@ font-weight: 500;
      font-size: 24px;
      font-weight: 600;
      line-height: normal;
+   }
+
+   .athletes{
+    width: 270px;
+    height: 270px;
+   }
+
+   .coaches{
+    width: 270px;
+    height: 270px;
+   }
+
+   .team{
+    width: 270px;
+    height: 270px;
+   }
+
+   .video{
+    width: 270px;
+    height: 270px;
+   }
+
+   .pageTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   }
+
+   .pageTwo p{
+    width: 800px;
+    font-size: 26px;
+   }
+
+   .pageTwo h1{
+    font-size: 24px;
+   }
+
+   .join p{
+    font-size: 24px;
+   }
+
+   .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .connect{
+    width: 300px;
+    height: 300px;
+   }
+
+   .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .share{
+    width: 300px;
+    height: 300px
+   }
+
+   .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .promote{
+    width: 300px;
+    height: 300px
+   }
+
+   .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .information{
+    width: 300px;
+    height: 300px;
    }
    
   
@@ -1093,6 +2601,71 @@ font-weight: 500;
   .getStarted{
     margin-top: 40px;
   }
+
+  .athletes{
+    width: 290px;
+    height: 290px;
+  }
+
+  .coaches{
+    width: 290px;
+    height: 290px;
+  }
+  .team{
+    width: 290px;
+    height: 290px;
+  }
+  .video{
+    width: 290px;
+    height: 290px;
+  }
+
+  .pageTwo h1{
+    font-size: 28px;
+  }
+
+  .pageTwo p{
+    font-size: 24px;
+  }
+
+  .join button{
+    margin-top: -20px;
+    height: 50px;
+  }
+
+  .connect-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .join p{
+    font-size: 24px;
+  }
+
+  
 }
 
 @media(min-width: 1301px) and (max-width: 1600px){

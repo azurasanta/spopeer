@@ -5,7 +5,7 @@ const Content = () => {
     return(
      <div>
   <div className="content">
-    <h1>Spopeer</h1>
+    <h1>Spopeer: Your passport to the world of sports</h1>
     <p>Uniting Athletes, Coaches, Sports Clubs, and Supportive Professionals Globally, Fostering Connections, Sharing Knowledge, and Playing Together in the World of Sports.</p>
   </div>
   <div className="content2">
