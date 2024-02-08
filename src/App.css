@@ -1209,7 +1209,7 @@ body {
 
 @media(min-width: 413px) and (max-width: 415px){
   .nav{
-    margin-top: -20W0px;
+    margin-top: -200px;
   }
   .pageTwo{
     display: flex;
@@ -1220,6 +1220,14 @@ body {
 
   body{
     overflow-x: hidden;
+  }
+
+  .logo{
+    margin-top: 10px;
+  }
+
+  .toggle{
+    margin-top: 15px;
   }
 
   .pageTwo h1{
