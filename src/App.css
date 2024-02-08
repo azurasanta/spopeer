@@ -905,7 +905,7 @@ body {
 
 @media(min-width: 413px) and (max-width: 415px){
   .nav{
-    margin-top: -350px;
+    margin-top: -380px;
   }
   .pageTwo{
     display: flex;
