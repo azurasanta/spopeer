@@ -198,6 +198,10 @@ body{
     margin-top: -35px;
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
   .content h1{
     color: #fff;
     font-size: 24px;
@@ -368,9 +372,22 @@ body{
    }
 }
 
-@media(min-width: 375px) and (max-width: 380px){
+@media(min-width: 375px) and (max-width: 376px){
   .nav{
-    margin-top: -200px;
+    margin-top: -135px;
+    height: 130px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .logo{
+   margin-top: 30px;
+  }
+
+  .toggle{
+    margin-top: 50px;
   }
 
   .pageTwo{
@@ -532,6 +549,10 @@ body{
     flex-direction: column;
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
   .content h1{
 
   }
@@ -648,6 +669,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  body{
+    overflow-x: hidden;
   }
 
   .pageTwo h1{
@@ -768,6 +793,10 @@ body{
     font-size: 26px;
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
   .pageTwo p{
     width: 350px;
     font-size: 24px;
@@ -876,6 +905,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  body{
+    overflow-x: hidden;
   }
 
   .pageTwo h1{
@@ -995,6 +1028,10 @@ body{
 
   .pageTwo h1{
     font-size: 26px;
+  }
+
+  body{
+    overflow-x: hidden;
   }
 
   .pageTwo p{
