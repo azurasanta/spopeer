@@ -3034,7 +3034,7 @@ font-weight: 500;
     align-items: center;
     flex-direction: row;
     flex-shrink: 0;
-    margin-top: -20px;
+    margin-top: 10px;
     border-radius: 60px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     height: 80px;
@@ -3057,7 +3057,7 @@ font-weight: 500;
   
   
     .content p{
-      font-size: 32px;
+      font-size: 24px;
       width: 1076px;
     }
   
@@ -3104,6 +3104,7 @@ font-weight: 500;
       font-size: 40px;
       font-style: normal;
       font-weight: 800;
+      width: 500px;
       line-height: normal;
       font-family: AirbnbCereal;
       color: #fff
@@ -3112,7 +3113,7 @@ font-weight: 500;
     .content p{
       color: #fff;
       text-align: center;
-      font-size: 40px;
+      font-size: 30px;
       font-style: normal;
       font-family: AirbnbCereal2;
       font-weight: 500;
@@ -3386,45 +3387,196 @@ font-weight: 500;
     }
     
     .getStarted{
-      margin-top: 40px;
+      margin-top: 30px;
     }
+  
+  .pageTwo p{
+    width: 884px;
+    font-size: 25px;
+    line-height: 34.1px;
+    font-weight: 400px;
+    text-align: center;
+  }
+  
+  .join{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .join button{
+    width: 224px;
+    margin-top: 10px;
+    color: #1637FF;
+    height: 59px;
+    border-radius: 8px;
+    padding: 16px, 22px, 16px, 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .connect-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  
+  .share-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .share-text p{
+    width: 638px;
+    text-indent: 20px;
+    word-wrap: break-word;
+    height: 132px;
+    text-align: center;
+  }
+  
+  .share-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 51px;
+  }
+  
+  .promote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .informed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  .informed-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .informed-text p{
+    width: 638px;
+    height: 132px;
+  }
+  
+  .footer{
+    background-color: #1637FF;
+    width: 200%;
+    overflow-x: hidden;
+    height: 94px
+  }
+  
+  .top-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .top-footer p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+  
+  .logo2{
+    height: 13px;
+    width: 13px;
+  }
+ 
+  .images{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row
   }
 
 .App {
   text-align: center;
 }
 
+.athletes{
+  width: 355px;
+  height: 271.62px
+}
+
+.coaches{
+  width: 355px;
+  height: 198.08px
+}
+.team{
+  width: 355px;
+  height: 212.11px
+}
+
+.video{
+  height: 271.62px;
+  width: 355px;
+}
+
+.connect{
+  width: 553.16px;
+  height: 383.79px
+}
+
+
+.connect-container{
+  display: flex;
+  gap: -200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-container{
+  gap: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share{
+  width: 496.49px;
+  height: 478.99px;
+}
+
+.promote{
+  width: 353.01px;
+  height: 342.23px;
+}
+
+.information{
+  width: 478.55px;
+  height: 496.43px;
+}
+
+.promote-container{
+  gap: 29px;
+}
+
+.promote-text p{
+  width: 638px;
+  height: 99px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
