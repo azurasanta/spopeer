@@ -1218,6 +1218,16 @@ body {
     flex-direction: column;
   }
 
+  .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content2 h2{
+    color: #FFF;
+  }
+
   body{
     overflow-x: hidden;
   }
