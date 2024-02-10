@@ -1,3 +1,9 @@
+/* Import first stylesheet */
+@tailwind base; 
+/* Import first stylesheet */
+@tailwind components;
+/* Import first stylesheet */
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url("https://db.onlinewebfonts.com/c/5cae74f63bd48d24d5abdddb3af09a50?family=Airbnb+Cereal+App+Black");
@@ -19,7 +25,7 @@
   src: url('https://fonts.googleapis.com/css?family=Mulish');
 }
 
-.App{
+/* .App{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1498,4 +1504,4 @@ font-weight: 500;
   to {
     transform: rotate(360deg);
   }
-}
+} */
