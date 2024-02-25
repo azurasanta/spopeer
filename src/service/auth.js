@@ -24,7 +24,6 @@ const socialMediaAuth = async (provider) => {
 
   signInWithPopup(auth, service)
     .then((res) => {
-      console.log("------------------")
       return res.user;
     })
     .catch((err) => {

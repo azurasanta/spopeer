@@ -35,10 +35,10 @@ const Nav = () => {
                 <FontAwesomeIcon icon={faBars}/>
               </div>
 
-              <div className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${toogleMenu}`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div className={`absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${toogleMenu}`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                 <div class="py-1" role="none">
-                  <Link to="/signin" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-0">Login</Link>
-                  <Link to="/signup" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabindex="-1" id="menu-item-1">Create Account</Link>
+                  <Link to="/signin" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-0">Login</Link>
+                  <Link to="/signup" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-1">Create Account</Link>
                 </div>
               </div>
             </div>
