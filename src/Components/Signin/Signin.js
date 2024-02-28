@@ -1,9 +1,11 @@
 
 import React, { useState } from "react";
-import { Link, Input } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, Input, useNavigate } from "react-router-dom";
 import * as z from "zod"
 import { socialMediaAuth, emailAuth } from "../../service/authModule";
+import { signInWithEmailAndPassword, fetchSignInMethodsForEmail, sendEmailVerification, createUserWithEmailAndPassword, FacebookAuthProvider, getAuth, GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from "firebase/auth";
+import { useAuth } from "../context/authContext";
+import { SERVER } from "../../config/constant";
 
 // import socialMediaAuth from "../../service/auth";
 
@@ -12,15 +14,19 @@ const schema = z.object({
 
 })
 
-const Signup = () => {
+const Signin = () => {
     const [email, setEmail] = useState("")
     const [errors, setErrors] = useState({});
 
     const navigate = useNavigate()
+    const auth = useAuth()
+
+    const handleLogout = () => {
+        auth.signOut()
+    }
 
     const fsocialMediaAuth = async (provider, cridential) => {
         const user = await socialMediaAuth(provider, cridential)
-        console.log(user)
     }
 
     const fEmailAuth = async (mode, cridential) => {
@@ -36,12 +42,12 @@ const Signup = () => {
             return;
         }
 
-        try {
-            const user = await emailAuth(mode, cridential)
-            navigate("/dashboard")
-        } catch (e) {
-            alert("not registered user")
-        }
+        signInWithEmailAndPassword(auth, email, "12345678")
+            .then(async data => {
+                const idToken = await data.user.getIdToken()
+
+                navigate("/dashboard")
+            })
     }
 
     return (
@@ -62,6 +68,7 @@ const Signup = () => {
                         loading="lazy"
                         srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/35f77f1aa03dfb6aa8be851fe75f91d49811436b6ad2e9b422d6a2ec14d9dbf7?apiKey=7c689f0b9cd241009ccaf5bb7b938aba&"
                         className="mt-8 aspect-square w-[72px]"
+                        onClick={handleLogout}
                     />
                     <div className="mt-6 text-3xl font-semibold leading-10 text-center text-gray-900 whitespace-nowrap">
                         Create an account
@@ -98,9 +105,9 @@ const Signup = () => {
                         <div className="flex-auto self-stretch">Or continue with email</div>
                         <div className="self-stretch my-auto h-px bg-gray-200 w-[100px]" />
                     </div>
-                    <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="Enter your email" className="justify-center px-3.5 py-2.5 mt-8 max-w-full text-gray-500 whitespace-nowrap bg-white rounded-lg border border-solid shadow-sm border-[color:var(--Gray-300,#D0D5DD)] text-ellipsis w-[360px]" />
+                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" className="justify-center px-3.5 py-2.5 mt-8 max-w-full text-gray-500 whitespace-nowrap bg-white rounded-lg border border-solid shadow-sm border-[color:var(--Gray-300,#D0D5DD)] text-ellipsis w-[360px]" />
                     {errors.email && <p className="text-red-600 mt-1">{errors.email}</p>}
-                    <div onClick={() => fEmailAuth("signin", {email:email})} className="hover:cursor-pointer justify-center items-center px-16 py-2.5 mt-4 max-w-full font-semibold text-white text-center whitespace-nowrap bg-blue-700 rounded-lg border border-solid shadow-sm border-[color:var(--Brand-600,#7F56D9)] w-[360px] max-md:px-5">
+                    <div onClick={() => fEmailAuth("signin", { email: email })} className="hover:cursor-pointer justify-center items-center px-16 py-2.5 mt-4 max-w-full font-semibold text-white text-center whitespace-nowrap bg-blue-700 rounded-lg border border-solid shadow-sm border-[color:var(--Brand-600,#7F56D9)] w-[360px] max-md:px-5">
                         Get started
                     </div>
                     <div className="flex gap-1 justify-center px-20 mt-8 max-w-full text-sm leading-5 whitespace-nowrap w-[360px] max-md:px-5">
@@ -113,4 +120,4 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default Signin

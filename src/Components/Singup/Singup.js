@@ -1,9 +1,10 @@
 
-import React, { useState } from "react";
-import { Link, Input } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect, useImperativeHandle } from "react";
+import { Link, Input, useNavigate } from "react-router-dom";
 import * as z from "zod"
-import { emailAuth } from "../../service/authModule";
+import { fetchSignInMethodsForEmail, sendEmailVerification, createUserWithEmailAndPassword, FacebookAuthProvider, getAuth, GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from "firebase/auth";
+import { SERVER } from "../../config/constant";
+import { useAuth } from "../context/authContext";
 
 // import socialMediaAuth from "../../service/auth";
 
@@ -14,6 +15,7 @@ const schema = z.object({
 
 const Signup = () => {
     const navigate = useNavigate()
+    const auth = useAuth()
 
     const [email, setEmail] = useState("")
     const [errors, setErrors] = useState({});
@@ -32,10 +34,26 @@ const Signup = () => {
         }
 
         try {
-            const user = await emailAuth(mode, cridential)
-            navigate("/signin")
+            const fetchMechod = await fetchSignInMethodsForEmail(auth.auth, email)
+            // already registered email
+            if (fetchMechod.length > 0) {
+                alert("Already registered!")
+                return
+            }
+
+            createUserWithEmailAndPassword(auth, email, "12345678")
+                .then((credential) => {
+                    sendEmailVerification(credential.user)
+                        .then(() => {
+                            alert("Verification email sent");
+                            window.localStorage.setItem("emailForSignIn", email)
+                        })
+                        .catch((error) => {
+                            console.error("Error sending verification email:", error);
+                        })
+                })
         } catch (e) {
-            alert("Failed to register")
+            console.log(e)
         }
     }
 
