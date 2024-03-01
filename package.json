@@ -1,6 +1,5 @@
 {
   "name": "spopeerr",
-  "homepage": "http://azurasanta.github.io/Spopeer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
