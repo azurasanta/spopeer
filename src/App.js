@@ -7,10 +7,10 @@ import { Route, Routes } from 'react-router-dom';
 import Signin from './Components/Signin/Signin';
 import Signup from './Components/Singup/Singup';
 import { EmailVerify } from './Components/Singup/EmailVerify';
-import { Dashboard } from './Components/Dashboard';
 import { AuthProvider } from './Components/context/authContext';
 // import PrivateRoute from './Components/PrivateRoute';
 import WithAuth from './Components/HOC/WithAuth';
+import Dashboard from './Components/Dashboard';
 
 function App() {
 
