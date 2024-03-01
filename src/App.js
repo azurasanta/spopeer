@@ -10,7 +10,7 @@ import { EmailVerify } from './Components/Singup/EmailVerify';
 import { AuthProvider } from './Components/context/authContext';
 // import PrivateRoute from './Components/PrivateRoute';
 import WithAuth from './Components/HOC/WithAuth';
-import Dashboard from './Components/Dashboard';
+import Dashboard from './Components/Mainboard';
 
 function App() {
 
