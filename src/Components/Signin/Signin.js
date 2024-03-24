@@ -26,7 +26,14 @@ const Signin = () => {
     }
 
     const fsocialMediaAuth = async (provider, cridential) => {
-        const user = await socialMediaAuth(provider, cridential)
+        const user = await socialMediaAuth(provider, cridential).then((user)=>{
+            navigate("/dashboard")
+        }).catch((e) => {
+            console.log(e)
+            alert("Authentication Failed")
+        })
+
+        console.log(user)
     }
 
     const fEmailAuth = async (mode, cridential) => {
