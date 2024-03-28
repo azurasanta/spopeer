@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { getAuth, onAuthStateChanged, signOut } from "firebase/auth"
+import { getAuth, onAuthStateChanged } from "firebase/auth"
 import app from "../../config/firebase-config";
 
 const AuthContext = createContext({
@@ -43,7 +43,8 @@ export function AuthProvider({ children }) {
         setUserId(null);
         setToken(null);
         localStorage.removeItem('userData');
-        signOut()
+        // signOut()
+        auth.signOut()
     }, []);
 
     const initialValues = {
