@@ -1,3 +1,4 @@
+import DropdownUser from "Components/header/DropdownUser"
 
 const Header = () => {
     return (
@@ -18,12 +19,7 @@ const Header = () => {
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/045b33985995a33e8d9f9623db99e3f7792c17b182993aecb1fece1fab4ba2b4?"
                         className="shrink-0 my-auto w-6 aspect-square"
                     />
-                    <img
-                        alt=""
-                        loading="lazy"
-                        src="/images/users/user-02.png"
-                        className="shrink-0 aspect-square w-[55px]"
-                    />
+                    <DropdownUser />
                 </div>
             </div>
         </div>
