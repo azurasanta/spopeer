@@ -32,7 +32,7 @@ const Signin = () => {
             const idToken = await user.getIdToken()
             const uid = user.uid
             login(uid, idToken)
-            navigate("/main")
+            navigate("/activities")
         }).catch((e) => {
             Report.failure(
                 'Error',
