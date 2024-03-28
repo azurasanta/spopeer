@@ -60,7 +60,7 @@ const Signin = () => {
                 const idToken = await data.user.getIdToken()
                 const uid = data.user.uid
                 login(uid, idToken)
-                navigate("/main")
+                navigate("/activities")
             }).catch(e => {
                 Report.failure(
                     'Error',
