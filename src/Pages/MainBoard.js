@@ -1,12 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import CommingSoon from "../Components/CommingSoon"
-import Dashbaord from './dashboard';
+import UserActivities from './UserActivities';
 
 const MainBoard = () => {
     return (
         <Routes>
-            <Route exact path="/main" Component={Dashbaord}></Route>
+            <Route exact path="/activities" Component={UserActivities}></Route>
         </Routes>
     )
 }

@@ -4,7 +4,7 @@ const Header = () => {
         <div className="flex flex-col justify-center self-stretch px-4 rounded-lg shadow-lg bg-stone-50">
             <div className="flex gap-2 w-full max-md:flex-wrap max-md:max-w-full">
                 <div className="flex flex-col flex-1 py-2 text-neutral-600 max-md:max-w-full">
-                    <div className="text-4xl font-extrabold max-md:max-w-full">
+                    <div className="text-2xl sm:text-4xl font-extrabold max-md:max-w-full">
                         User activities
                     </div>
                     <div className="mt-2 text-base font-medium max-md:max-w-full">
@@ -21,7 +21,7 @@ const Header = () => {
                     <img
                         alt=""
                         loading="lazy"
-                        srcSet="..."
+                        src="/images/users/user-02.png"
                         className="shrink-0 aspect-square w-[55px]"
                     />
                 </div>
