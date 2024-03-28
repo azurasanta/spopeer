@@ -2,10 +2,11 @@ import { useAuth } from "../context/authContext";
 import { Navigate } from 'react-router-dom';
 
 const WithAuth = (Component) => {
-
     const AuthRoute = () => {
-        const auth = useAuth()
-        if (auth.currentUser) {
+        const {auth, isLoggedIn} = useAuth()
+        const userData = localStorage.getItem("userData");
+
+        if (userData) {
             return <Component />
         }
         else {

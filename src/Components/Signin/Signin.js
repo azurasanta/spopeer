@@ -6,6 +6,7 @@ import { socialMediaAuth, emailAuth } from "../../service/authModule";
 import { signInWithEmailAndPassword, fetchSignInMethodsForEmail, sendEmailVerification, createUserWithEmailAndPassword, FacebookAuthProvider, getAuth, GoogleAuthProvider, GithubAuthProvider, signInWithPopup } from "firebase/auth";
 import { useAuth } from "../context/authContext";
 import { SERVER } from "../../config/constant";
+import { Report } from "notiflix";
 
 // import socialMediaAuth from "../../service/auth";
 
@@ -17,23 +18,28 @@ const schema = z.object({
 const Signin = () => {
     const [email, setEmail] = useState("")
     const [errors, setErrors] = useState({});
+    const { auth, login } = useAuth()
 
     const navigate = useNavigate()
-    const auth = useAuth()
+    // const auth = useAuth()
 
     const handleLogout = () => {
         auth.signOut()
     }
 
     const fsocialMediaAuth = async (provider, cridential) => {
-        const user = await socialMediaAuth(provider, cridential).then((user)=>{
-            navigate("/dashboard")
+        socialMediaAuth(provider, cridential).then(async (user) => {
+            const idToken = await user.getIdToken()
+            const uid = user.uid
+            login(uid, idToken)
+            navigate("/main")
         }).catch((e) => {
-            console.log(e)
-            alert("Authentication Failed")
+            Report.failure(
+                'Error',
+                'Authentication Failed',
+                'Okay',
+            );
         })
-
-        console.log(user)
     }
 
     const fEmailAuth = async (mode, cridential) => {
@@ -52,8 +58,15 @@ const Signin = () => {
         signInWithEmailAndPassword(auth, email, "12345678")
             .then(async data => {
                 const idToken = await data.user.getIdToken()
-
-                navigate("/dashboard")
+                const uid = data.user.uid
+                login(uid, idToken)
+                navigate("/main")
+            }).catch(e => {
+                Report.failure(
+                    'Error',
+                    'Authentication Failed',
+                    'Okay',
+                );
             })
     }
 

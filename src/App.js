@@ -10,7 +10,7 @@ import { EmailVerify } from './Components/Singup/EmailVerify';
 import { AuthProvider } from './Components/context/authContext';
 // import PrivateRoute from './Components/PrivateRoute';
 import WithAuth from './Components/HOC/WithAuth';
-import Dashboard from './Components/Mainboard';
+import MainBoard from './Pages/MainBoard';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/signup" Component={Signup}></Route>
           <Route exact path="/verify" Component={EmailVerify}></Route>
           {/* <Route exact path='/*' element={<PrivateRoute component={Dashboard}/>}></Route> */}
-          <Route path='/*' Component={WithAuth(Dashboard)}></Route>
+          <Route path='/*' Component={WithAuth(MainBoard)}></Route>
         </Routes>
       </AuthProvider>
     </div>
