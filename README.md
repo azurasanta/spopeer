@@ -1,9 +1,6 @@
-Spopeer from CRA scratch
+# Getting Started with Create React App
 
-Consist of 
-- landing page,
-- admin
-- user
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 1. Roadmap
    - url: 
