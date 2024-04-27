@@ -1,6 +1,7 @@
 
 import { Factory, Model, createServer } from "miragejs";
 
+// Server api
 export default function server() {
     createServer({
         models: {
